@@ -5,10 +5,10 @@ selection:
     ### use `&`, `|`, `~` for logical operations on numpy arrays
     ### can use functions from `math`, `np` (numpy), and `awkward` in the expression
     >
-    (fj_pt>300) &
+    (fj_pt>200) &
     (fj_pt<2500) &
     (fj_msoftdrop>=30) &
-    (fj_msoftdrop<260) &
+    (fj_msoftdrop<320) &
     ((fj_isQCDb==1) |
      (fj_isQCDbb==1) |
      (fj_isQCDc==1) |
@@ -24,10 +24,10 @@ selection:
 test_time_selection:
     ### selection to apply at test time (i.e., when running w/ --predict)
     >
-    (fj_pt>300) &
+    (fj_pt>200) &
     (fj_pt<2500) &
     (fj_msoftdrop>=30) &
-    (fj_msoftdrop<260) &
+    (fj_msoftdrop<320) &
     ((fj_isQCDb==1) |
      (fj_isQCDbb==1) |
      (fj_isQCDc==1) |
@@ -178,8 +178,8 @@ weights:
    use_precomputed_weights: false
    reweight_method: flat
    reweight_vars:
-      fj_pt: [300, 380, 481, 658, 770, 974, 1233, 1561, 1975, 2500]
-      fj_msoftdrop: [-10000, 10000]
+      fj_pt: [200, 251, 316, 398, 501, 630, 793, 997, 1255, 1579, 1987, 2500]
+      fj_msoftdrop: [30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 300, 320] 
    reweight_classes:
        [
        fj_isQCDb, fj_isQCDbb, fj_isQCDc, fj_isQCDcc, fj_isQCDlep, fj_isQCDothers,
