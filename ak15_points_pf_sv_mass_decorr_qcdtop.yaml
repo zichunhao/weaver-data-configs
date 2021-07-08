@@ -50,14 +50,14 @@ new_variables:
     fj_isTop_semimerged: (fj_isTop==1) & (fj_nProngs==2)
     fj_isToplep_merged: (fj_isToplep==1) & (fj_nProngs>=2)  # so that you have at least the lepton and the b merged in the leptonic case
     # Signal (HWW)
-    fj_isHWW_elenuqq_merged: (fj_H_WW_elenuqq==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==4)
-    fj_isHWW_elenuqq_semimerged: (fj_H_WW_elenuqq==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==3)
-    fj_isHWW_munuqq_merged: (fj_H_WW_munuqq==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==4)
-    fj_isHWW_munuqq_semimerged: (fj_H_WW_munuqq==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==3)
-    fj_isHWW_taunuqq_merged: (fj_H_WW_taunuqq==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==4)
-    fj_isHWW_taunuqq_semimerged: (fj_H_WW_taunuqq==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==3)
-    fj_H_WW_4q_3q: (fj_H_WW_4q==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==3)
-    fj_H_WW_4q_4q: (fj_H_WW_4q==1) && (fj_maxdR_HWW_daus<=0.8) & (fj_nProngs==4)
+    fj_isHWW_elenuqq_merged: (fj_H_WW_elenuqq==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==4)
+    fj_isHWW_elenuqq_semimerged: (fj_H_WW_elenuqq==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==3)
+    fj_isHWW_munuqq_merged: (fj_H_WW_munuqq==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==4)
+    fj_isHWW_munuqq_semimerged: (fj_H_WW_munuqq==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==3)
+    fj_isHWW_taunuqq_merged: (fj_H_WW_taunuqq==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==4)
+    fj_isHWW_taunuqq_semimerged: (fj_H_WW_taunuqq==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==3)
+    fj_H_WW_4q_3q: (fj_H_WW_4q==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==3)
+    fj_H_WW_4q_4q: (fj_H_WW_4q==1) && (fj_maxdR_HWW_daus<=1.5) & (fj_nProngs==4)
 
 
 preprocess:
@@ -120,7 +120,7 @@ inputs:
         - sv_phirel
         - [sv_abseta, 0.5, 1.6]
         - [sv_ntracks, 3, 1]
-        - [sv_normchi2, 0.8, 0.6]
+        - [sv_normchi2, 1.5, 0.6]
         - [sv_dxy, 0.4, 0.25]
         - [sv_dxysig, 7, 0.02]
         - [sv_d3d, 0.5, 0.2]
