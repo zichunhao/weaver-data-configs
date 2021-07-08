@@ -15,6 +15,8 @@ selection:
      (fj_isQCDcc==1) |
      (fj_isQCDlep == 1) |
      (fj_isQCDothers == 1) |
+     (fj_isTop == 1) |
+     (fj_isToplep==1) |
      ((fj_H_WW_4q==1) & (fj_maxdR_HWW_daus<2.0)) |
      ((fj_H_WW_elenuqq==1) & (fj_maxdR_HWW_daus<2.0)) |
      ((fj_H_WW_munuqq==1) & (fj_maxdR_HWW_daus<2.0)) |
