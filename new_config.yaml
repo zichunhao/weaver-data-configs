@@ -138,13 +138,11 @@ labels:
     value: [
         fj_isQCDb, fj_isQCDbb, fj_isQCDc, fj_isQCDcc, fj_isQCDlep, fj_isQCDothers,
         fj_isTop_merged, fj_isTop_semimerged,
-        fj_isToplep_merged, fj_isWlep,
-        fj_H_bb, fj_H_cc, fj_H_qq,
+        fj_isToplep_merged,
         fj_H_WW_4q_3q, fj_H_WW_4q_4q,
         fj_isHWW_elenuqq_merged, fj_isHWW_elenuqq_semimerged,
         fj_isHWW_munuqq_merged, fj_isHWW_munuqq_semimerged,
         j_isHWW_taunuqq_merged, fj_isHWW_taunuqq_semimerged,
-        fj_H_tt_elenuhad, fj_H_tt_munuhad, fj_H_tt_hadhad,
     ]
     ### [option 2] otherwise use `custom` to define the label, then `value` is a map
     # type: custom
