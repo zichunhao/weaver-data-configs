@@ -67,7 +67,7 @@ preprocess:
     ### data_fraction: fraction of events to use when calculating the mean/scale for the standardization
     data_fraction:
 
-inputs:  # TODO: update this if needed (copied from ak15hww4q_points_pf_sv_mass_decorr.yaml)
+inputs:
     pf_points:
         length: 100
         vars:
@@ -149,7 +149,7 @@ labels:
     # value:
        # target_mass: np.where(fj_isQCD, fj_genjet_sdmass, fj_gen_mass)
 
-observers:  # TODO: Update this if needed (copied from ak15hww4q_points_pf_sv_mass_decorr.yaml)
+observers:
    - fj_pt
    - fj_eta
    - fj_phi
@@ -170,7 +170,7 @@ observers:  # TODO: Update this if needed (copied from ak15hww4q_points_pf_sv_ma
    - fj_genW_decay
    - fj_genWstar_decay
 
-weights:  # TODO: Update this if needed (adapted from ak15hww4q_points_pf_sv_mass_decorr.yaml)
+weights:
    ### [option 1] use precomputed weights stored in the input files
    # use_precomputed_weights: true
    # weight_branches: [weight, class_weight]
