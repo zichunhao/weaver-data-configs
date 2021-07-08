@@ -142,7 +142,7 @@ labels:
         fj_H_WW_4q_3q, fj_H_WW_4q_4q,
         fj_isHWW_elenuqq_merged, fj_isHWW_elenuqq_semimerged,
         fj_isHWW_munuqq_merged, fj_isHWW_munuqq_semimerged,
-        j_isHWW_taunuqq_merged, fj_isHWW_taunuqq_semimerged,
+        fj_isHWW_taunuqq_merged, fj_isHWW_taunuqq_semimerged,
     ]
     ### [option 2] otherwise use `custom` to define the label, then `value` is a map
     # type: custom
@@ -183,7 +183,7 @@ weights:  # TODO: Update this if needed (adapted from ak15hww4q_points_pf_sv_mas
    reweight_classes:
        [fj_isQCDb, fj_isQCDbb, fj_isQCDc, fj_isQCDcc, fj_isQCDlep, fj_isQCDothers,
        fj_isTop_merged, fj_isTop_semimerged, fj_isToplep_merged, fj_isWlep,
-       fj_H_WW_4q_3q, fj_H_WW_4q_4q, ffj_isHWW_elenuqq_merged, fj_isHWW_elenuqq_semimerged,
+       fj_H_WW_4q_3q, fj_H_WW_4q_4q, fj_isHWW_elenuqq_merged, fj_isHWW_elenuqq_semimerged,
        fj_isHWW_munuqq_merged, fj_isHWW_munuqq_semimerged, fj_isHWW_taunuqq_merged, fj_isHWW_taunuqq_semimerged,
        fj_H_tt_elenuhad, fj_H_tt_munuhad, fj_H_tt_hadhad]
    # reweight_classes: [fj_isQCD, fj_H_WW_4q, fj_H_WW_elenuqq, fj_H_WW_munuqq] #,fj_isTop]
