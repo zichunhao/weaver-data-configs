@@ -87,6 +87,11 @@ inputs:  # TODO: update this if needed (copied from ak15hww4q_points_pf_sv_mass_
         - [pfcand_e_log_nopuppi, 1.3, 0.5]
         - pfcand_etarel
         - pfcand_phirel
+        - pfcand_isEl
+        - pfcand_isMu
+        - pfcand_isGamma
+        - pfcand_isChargedHad
+        - pfcand_isNeutralHad
         - [pfcand_abseta, 0.6, 1.6]
         - pfcand_charge
         - [pfcand_VTX_ass, 4, 0.3]
@@ -124,6 +129,7 @@ inputs:  # TODO: update this if needed (copied from ak15hww4q_points_pf_sv_mass_
         length: 10
         vars:
         - sv_mask
+
 
 labels:
     ### type can be `simple`, `custom`
