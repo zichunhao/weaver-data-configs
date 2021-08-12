@@ -169,7 +169,7 @@ weights:
    # weight_branches: [weight, class_weight]
    ### [option 2] compute weights on-the-fly using reweighting histograms
    use_precomputed_weights: false
-   reweight_method: flat
+   reweight_method: ref
    reweight_vars:
       fj_pt: [200, 251, 316, 398, 501, 630, 793, 997, 1255, 1579, 1987, 2500]
       fj_msoftdrop: [30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 300, 320]
